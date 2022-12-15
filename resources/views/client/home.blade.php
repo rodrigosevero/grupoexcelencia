@@ -18,17 +18,20 @@
                     </div>
                     @endif
 
-                    
-                    <div class="row">
-                        <div class="col-md-6">
+
+                    <div class="row text-center">
+                        <div class="col-md-6 text-center">
                             <p>
-                                <img src="{{ asset('public/tema/assets/img/ico-simulado.png') }}" width="150"><br>
+                                <a href="{{ route('client.test') }}">
+                                    <img src="{{ asset('public/tema/assets/img/ico-simulado.png') }}" width="150" height="150"></a><br>
                                 <a href="{{ route('client.test') }}">Acessar simulado</a>
                             </p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-center">
                             <p>
-                                <img src="{{ asset('public/tema/assets/img/ico-resultado.png') }}" width="150"><br>
+                                <a href="{{ route('client.results.geral') }}">
+                                    <img src="{{ asset('public/tema/assets/img/ico-resultado.png') }}" width="150" height="150"></a>
+                                <br>
                                 <a href="{{ route('client.results.geral') }}">Acessar resultados</a>
                             </p>
                         </div>

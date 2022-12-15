@@ -7,7 +7,7 @@
                 
 
                 <p class="text-muted text-center">
-                    <img src="{{ asset('/public/images/logo.png') }}" width="400">
+                    <img src="{{ asset('/public/images/logo.png') }}" class="img-fluid" width="400">
                 </p><br>
 
                 @if(session('status'))
