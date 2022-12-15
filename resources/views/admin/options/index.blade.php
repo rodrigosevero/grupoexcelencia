@@ -11,7 +11,7 @@
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.option.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.option.title') }}
     </div>
 
 
@@ -22,8 +22,8 @@
         <div class="form-group">
             <label class="required" for="question_id">Selecione uma questão: </label>
             <select class="form-control select2 {{ $errors->has('question') ? 'is-invalid' : '' }}" name="question_id" id="question_id" required onchange="javascript:location.href = this.value;">
-                @foreach($questions as $id => $question)
-                <option value="?id={{ $id }}" {{ old('question_id') == $id ? 'selected' : '' }}>{{ $question }}</option>
+                @foreach($questions as $question)
+                <option value="?id={{ $question->id }}" {{ old('question_id') == $request->id ? 'selected' : '' }}>ID: {{ $question->id }} - {{ $question->question_text }}</option>
                 @endforeach
             </select>
             @if($errors->has('question_id'))
@@ -45,9 +45,9 @@
                         <th>
                             {{ trans('cruds.option.fields.id') }}
                         </th>
-                        <th>
+                        <!-- <th>
                             {{ trans('cruds.option.fields.question') }}
-                        </th>
+                        </th> -->
                         <th>
                             {{ trans('cruds.option.fields.option_text') }}
                         </th>
@@ -68,9 +68,9 @@
                         <td>
                             {{ $option->id ?? '' }}
                         </td>
-                        <td>
+                        <!-- <td>
                             {{ $option->question->question_text ?? '' }}
-                        </td>
+                        </td> -->
                         <td>
                             {{ $option->option_text ?? '' }}
                         </td>
@@ -78,11 +78,11 @@
                             {{ $option->points ?? '' }}
                         </td>
                         <td>
-                            @can('option_show')
+                            <!-- @can('option_show')
                             <a class="btn btn-xs btn-primary" href="{{ route('admin.options.show', $option->id) }}">
                                 {{ trans('global.view') }}
                             </a>
-                            @endcan
+                            @endcan -->
 
                             @can('option_edit')
                             <a class="btn btn-xs btn-info" href="{{ route('admin.options.edit', $option->id) }}">

@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <p>
+            <h1>Usuario: {{ Auth::user()->name }}</h1>            
+            </p>
             <div class="card">
                 <div class="card-header">Resultados</div>
 

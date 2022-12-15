@@ -31,14 +31,14 @@
                         <th>
                             {{ trans('cruds.user.fields.email') }}
                         </th>
-                        <th>
+                        <!-- <th>
                             {{ trans('cruds.user.fields.email_verified_at') }}
-                        </th>
+                        </th> -->
                         <th>
                             {{ trans('cruds.user.fields.roles') }}
                         </th>
                         <th>
-                            &nbsp;
+                            Opções
                         </th>
                     </tr>
                 </thead>
@@ -57,20 +57,20 @@
                             <td>
                                 {{ $user->email ?? '' }}
                             </td>
-                            <td>
+                            <!-- <td>
                                 {{ $user->email_verified_at ?? '' }}
-                            </td>
+                            </td> -->
                             <td>
                                 @foreach($user->roles as $key => $item)
                                     <span class="badge badge-info">{{ $item->title }}</span>
                                 @endforeach
                             </td>
                             <td>
-                                @can('user_show')
+                                <!-- @can('user_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.users.show', $user->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+                                @endcan -->
 
                                 @can('user_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.users.edit', $user->id) }}">

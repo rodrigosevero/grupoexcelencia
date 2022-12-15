@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ trans('panel.site_title') }}</title>
+    <title>Grupo Excelência</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" />
@@ -31,10 +31,10 @@
         </button>
         <a class="navbar-brand" href="#">
             <span class="navbar-brand-full">
-                <!-- {{ trans('panel.site_title') }} -->
+            <img src="{{ asset('/public/images/logo.png') }}" width="100">
             </span>
             <span class="navbar-brand-minimized">
-                <!-- {{ trans('panel.site_title') }} -->
+            <img src="{{ asset('/public/images/logo.png') }}" width="100">
             </span>
         </a>
         <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
@@ -112,7 +112,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    <script>
+    <!-- <script>
         $(function() {
   let copyButtonTrans = '{{ trans('global.datatables.copy') }}'
   let csvButtonTrans = '{{ trans('global.datatables.csv') }}'
@@ -203,7 +203,7 @@
   $.fn.dataTable.ext.classes.sPageButton = '';
 });
 
-    </script>
+    </script> -->
     @yield('scripts')
 </body>
 

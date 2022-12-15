@@ -16,12 +16,13 @@ class OptionsController extends Controller
 {
     public function index(Request $request)
     {
-        abort_if(Gate::denies('option_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        $questions = Question::all()->pluck('question_text', 'id')->prepend(trans('global.pleaseSelect'), '');
+        abort_if(Gate::denies('option_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');        
+        // $questions = Question::all()->pluck('question_text', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $questions = Question::all();
         $options = Option::where('question_id', $request->id)->get();
 
 
-        return view('admin.options.index', compact('options', 'questions'));
+        return view('admin.options.index', compact('options', 'questions', 'request'));
     }
 
     public function create()

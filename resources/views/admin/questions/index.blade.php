@@ -11,7 +11,7 @@
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.question.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.question.title') }} 
     </div>
 
     <div class="card-body">
@@ -52,11 +52,11 @@
                                 {{ $question->question_text ?? '' }}
                             </td>
                             <td>
-                                @can('question_show')
+                                <!-- @can('question_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.questions.show', $question->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+                                @endcan -->
 
                                 @can('question_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.questions.edit', $question->id) }}">

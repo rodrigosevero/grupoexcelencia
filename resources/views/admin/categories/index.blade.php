@@ -11,8 +11,9 @@
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.category.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.category.title') }}
     </div>
+
 
     <div class="card-body">
         <div class="table-responsive">
@@ -46,11 +47,11 @@
                                 {{ $category->name ?? '' }}
                             </td>
                             <td>
-                                @can('category_show')
+                                <!-- @can('category_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.categories.show', $category->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
-                                @endcan
+                                @endcan -->
 
                                 @can('category_edit')
                                     <a class="btn btn-xs btn-info" href="{{ route('admin.categories.edit', $category->id) }}">
