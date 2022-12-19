@@ -11,7 +11,7 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <a href="http://reservasexcelencia.com.br/">
+                <a href="http://reservasexcelencia.com.br/" target="_blank">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-calendar fa-stack-1x fa-inverse"></i>
@@ -30,7 +30,7 @@
                         <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
-                <a href="{{ route('login') }}">
+                <a href="{{ route('login') }}" target="_blank">
                     <h4 class="my-3">Escola Náutica</h4>
                 </a>
                 <p class="text-muted">Simulado online para a prova de arrais amador</p>
