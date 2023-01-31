@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{ asset('public/site/css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ asset('site/css/styles.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,7 +39,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container" style="background-color: rgb(255, 255, 255, 0.8); padding:20px; color:#00aad9;">
-                <div class="masthead-subheading"><img src="{{ asset('public/images/logo.png') }}" width="250px" /></div>
+                <div class="masthead-subheading"><img src="{{ asset('images/logo.png') }}" width="250px" /></div>
                 <div class="masthead-heading">Cotas Náuticas & Escola Náutica</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Saiba mais</a>
             </div>
