@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{ asset('site/css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ asset('public/site/css/styles.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -50,7 +50,7 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">&copy; Grupo Excelência - <?=date("Y");?></div>
+                    <div class="col-lg-4 text-lg-start">&copy; Grupo Excelência - <?=date("Y");?> - <a href="http://grupoexcelencianautica.com.br/public/login">Login</a></div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/excelenciacotasnauticas/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
